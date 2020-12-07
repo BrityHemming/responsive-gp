@@ -1,0 +1,213 @@
+html, body, div, span, applet, object, iframe,  
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
+a, abbr, acronym, address, big, cite, code,  
+del, dfn, em, img, ins, kbd, q, s, samp,  
+small, strike, strong, sub, sup, tt, var,  
+b, u, i, center,  
+dl, dt, dd, ol, ul, li,  
+fieldset, form, label, legend,  
+table, caption, tbody, tfoot, thead, tr, th, td,  
+article, aside, canvas, details, embed,  
+figure, figcaption, footer, header, hgroup,  
+menu, nav, output, ruby, section, summary,  
+time, mark, audio, video {  
+margin: 0;  
+padding: 0;  
+/* border: 0;   */
+font-size: 100%;  
+font: inherit;  
+vertical-align: baseline;  
+}
+*{
+    box-sizing:border-box; /*this rule says, if I give an element a width I want it to respect that width - if I add padding or a border, apply it within the width given not in addition to it*/
+    border:1px solid grey;
+    max-width:100%; /*this says you can never be bigger than your parent*/
+}
+/*General Styles*/ 
+html{
+    font-size:62.5%;
+}
+body{
+    font-size:1.6rem;
+    line-height:1.5;
+    font-family: 'Roboto Mono', monospace;
+    color:#4F4F4F;
+}
+h1{
+    font-family: 'Chelsea Market', cursive;
+    font-size:5rem;
+}
+span{
+    font-weight:bold;
+}
+a{
+    text-decoration:none;
+    color:#4F4F4F;
+}
+section{
+    padding:4% 0;
+}
+/*navigation Styles*/
+/* .stay{
+    width:100%;
+    position:fixed;
+    z-index:9999;
+} */
+nav{
+    padding:2% 0;
+    display:flex;
+    justify-content: space-around;
+}
+nav a{
+    display:inline-block;
+    padding:1% 0;
+    width:10%;
+    border-radius:10px;
+    text-align:center;
+    color:#fff;
+}
+.orange{
+    background-color: #FF764E;
+}
+.blue{
+    background-color:#5ED3EB;
+}
+.yellow{
+    background-color:#FFCD69;
+}
+.sr-only:not(:focus):not(:active) {
+    clip: rect(0 0 0 0); 
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap; 
+    width: 1px;
+  }
+/*header section styles*/
+header{
+    display:flex;
+    justify-content: space-around;
+    padding:4% 0;
+}
+.image{
+    width:40%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.image img{
+    border-radius:50%;
+    width:60%;
+}
+.title{
+    width:55%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.title div{
+    width:80%;
+}
+/*Main Section Styles*/
+.main div{
+    background-color: #DDB9A3;
+    width:80%;
+    margin:0 auto;
+    padding:2%;
+    color:#fff;
+}
+.main div p{
+    margin:1% 0;
+}
+/*Camp section styles*/
+.camp{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+.camp div{
+    width:35%;
+    text-align:center;
+    margin:4% 0;
+}
+.camp div img{
+    width:80%;
+}
+/*background image section*/
+.bg-img{
+    background-image:url('assets/footer_img.jpg');
+    background-size:cover;
+    background-position:top;
+    background-repeat: no-repeat;
+    height:40vh;
+    /* background-attachment: fixed; */ /*make it look like the image stays in once place when you scroll*/
+}
+/*footer section styles*/
+footer{
+    background-color:#F9E7DC;
+}
+/*Media Queries*/
+/*Tablet View*/
+/*this rule is for 800px screen or smaller*/
+@media (max-width:800px){
+   nav a{
+       width:15%;
+   }
+   /*header section styles*/
+   .image img{
+       width:80%;
+   }
+   /*camp section styles*/
+   .camp div{
+    width:45%;
+   }
+   /*background image section*/
+   .bg-img{
+       height:60vh;
+       background-position:center;
+   }
+}
+/*Phone View*/
+@media (max-width:500px){
+  nav{
+      flex-direction:column;
+      justify-content: center;
+      align-items: center;
+  }
+  nav a{
+      width:50%;
+      margin:2% 0;
+  }
+  .blue{
+      order:-1;
+  }
+  /*header styles*/
+  header{
+      flex-wrap:wrap;
+  }
+  .image{
+      width:80%;
+  }
+  .title{
+      width:80%;
+      margin-top:4%;
+  }
+  .title div{
+      width:100%;
+  }
+  /*camp section styles*/
+  .camp div{
+      width:80%;
+  }
+  .camp div img{
+      width:60%;
+  }
+  /*bg img section*/
+  .bg-img{
+      height:40vh;
+      /* display:none; */
+  }
+}
