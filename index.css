@@ -1,0 +1,151 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	/* border-spacing: 0; */
+}
+*{
+    box-sizing:border-box; /* this rule says, if someone gives an element a width I want It to respect that width - if there padding or a border , apply it with in the width given no in addition to it*/
+    border: 1px solid ghostwhite;
+    max-width: 100%; /* this says you can never be bigger than your parent.*/
+}
+/*general styles*/
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size:1.6rem;
+	line-height:1.5;
+	font-family: 'Fraunces', serif;
+	color: rgb(187, 68, 21);
+}
+h1{
+	font-family: 'Chelsea Market', cursive;
+	font-size:5rem;
+}
+span{
+	font-weight:bold;
+}
+a{
+	text-decoration: none;
+}
+section{
+	padding:4% 0;
+}
+nav{
+	padding: 2% 0;
+	display: flex;
+	justify-content: space-around;
+}
+nav a{
+	display:inline-block;
+	padding:1% 0;
+	width:10%;
+	border: radius 10%;
+	text-align: center;
+	color: rgb(34, 61, 7);
+}
+.orange{
+	background-color: lightcoral;
+}
+.blue{
+	background-color: lightpink;
+}
+.yellow{
+	background-color: lime;
+
+}
+.header{
+	display:flex;
+	justify-content: space-around;
+}
+.image{
+	width:40%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.image image{
+	border-radius:50%;
+	width:60%;
+}
+.title{
+	width:55%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.title{
+	width:8%;
+}
+.main div{
+	background-color: magenta;
+	width: 80%;
+	margin:0 auto;
+	padding:2%;
+	color:mediumblue;
+}
+.main div p{
+	margin:1% 0;
+}
+.camp{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.camp div{
+	width: 35%;
+	text-align: center;
+	margin:4% 0;
+}
+.camp div img{
+	width:80%;
+}
+.bg-image{
+	background-image: :url('assets/footer_img.jpg');
+	background-size:cover;
+	background-position:top;
+	background-repeat:no-repeat;
+	height:40vh;	
+}
+.footer{
+	background-color: mediumpurple;
+}
